@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  @apply max-w-[1240px] mx-auto p-2.5 w-full;
+  @apply max-w-[1200px] mx-auto p-2.5 w-full;
 }
 .anchor {
   @apply text-[20px]  hover:text-red-500;
